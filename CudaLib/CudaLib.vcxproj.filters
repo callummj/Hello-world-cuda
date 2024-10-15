@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3cdd85dd-5685-4d85-a546-53939a1b4354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{fa0af0e8-fc23-4391-9f8e-8ed0b7c15100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interfaces">
+      <UniqueIdentifier>{34871fb7-4545-44a7-9bdc-4c74c701734d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA Files">
+      <UniqueIdentifier>{a23ae1ce-c10a-401f-bd1a-4a845576cf97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA Files\CUDA Headers">
+      <UniqueIdentifier>{0ca426b4-f764-4190-a26e-7837ab2f9524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA Files\CUDA Source Files">
+      <UniqueIdentifier>{772c35a9-6c1a-4b02-a9df-e1f8306e937b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\ICudaLib.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ExportDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CudaLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MiscCuda.cuh">
+      <Filter>CUDA Files\CUDA Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu">
+      <Filter>CUDA Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Source\MiscCuda.cu">
+      <Filter>CUDA Files\CUDA Source Files</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\CudaLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
